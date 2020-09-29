@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryFacultad
 {
-    class Alumno
+    class Alumno : Persona
     {
+        private int _codigo;
+
+        public string Credencial
+        {
+            set { this._nombre = value; this._apellido = value; this._codigo = int.Parse(value); }
+         
+        }
+        public override string GetCredencial()
+        {
+            
+        }
     }
 }
