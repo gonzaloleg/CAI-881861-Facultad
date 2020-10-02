@@ -8,6 +8,9 @@ namespace ClassLibraryFacultad
 {
     class Empleado
     {
+        private int _legajo;
+        private DateTime _fechaIngreso;
+        private List<Salario> _salarios;
 
     }
 }
