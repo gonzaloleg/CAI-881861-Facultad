@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,14 +11,20 @@ namespace ClassLibraryFacultad
     {
         private int _codigo;
 
-        public string Credencial
+        public int Codigo
         {
-            set { this._nombre = value; this._apellido = value; this._codigo = int.Parse(value); }
-         
+            get { return this._codigo; }
+            set { this._codigo = value; }
         }
         public override string GetCredencial()
         {
-            
+            return "Codigo " + Codigo + " " + Apellido + " " + Nombre;
         }
+
+        public override string ToString()
+        {
+            return GetCredencial();
+        }
+
     }
 }
