@@ -8,5 +8,6 @@ namespace ClassLibraryFacultad
 {
     class Empleado
     {
+
     }
 }
